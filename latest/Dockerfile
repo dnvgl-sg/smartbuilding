@@ -22,9 +22,9 @@ USER node-red
 # package.json contains Node-RED NPM module and node dependencies
 COPY package.json /usr/src/node-red/
 COPY settings.js /data/
-
 COPY flows.json /data/
 COPY rpi_meeting.jpg /data/
+
 
 RUN npm install
 RUN npm install node-red-dashboard node-red-contrib-web-worldmap node-red-contrib-azure-iot-hub node-red-admin node-red-node-mysql node-red-admin node-red-contrib-python3-function node-red-contrib-spreadsheet-in node-red-node-darksky
